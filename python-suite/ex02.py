@@ -5,19 +5,12 @@ Created on Fri Oct  7 14:45:26 2022
 @author: j.dearaujofirmino
 """
 
+
 def nb_chifrres(n):
-    size = 0
-    m = 10
-    end = False
-    while end != True:
-        count = 1
-        if n < (m * count) :
-            size = size + 1
-            count = count + 1
-        else:
-            end = True
-    print(size)
+    count = 0
+    for i in n:
+        count = count + 1
+    return count
 
-
- 
-nb_chifrres(int(input("Valeur n: ")))
+nbChifre = nb_chifrres(str(input("Un numero:")))
+print(nbChifre)
